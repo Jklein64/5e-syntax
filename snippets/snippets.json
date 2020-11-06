@@ -1,0 +1,332 @@
+{
+  "{@5etools} tag": {
+    "scope": "json,yaml",
+    "prefix": "@5etools",
+    "body": ["{@5etools ${1:body}}$0"]
+  },
+  "{@action} tag": {
+    "scope": "json,yaml",
+    "prefix": "@action",
+    "body": ["{@action ${1:body}}$0"]
+  },
+  "{@adventure} tag": {
+    "scope": "json,yaml",
+    "prefix": "@adventure",
+    "body": ["{@adventure ${1:body}}$0"]
+  },
+  "{@area} tag": {
+    "scope": "json,yaml",
+    "prefix": "@area",
+    "body": ["{@area ${1:body}}$0"]
+  },
+  "{@atk} tag": {
+    "scope": "json,yaml",
+    "prefix": "@atk",
+    "body": ["{@atk ${1:body}}$0"]
+  },
+  "{@b} tag": {
+    "scope": "json,yaml",
+    "prefix": "@b",
+    "body": ["{@b ${1:body}}$0"]
+  },
+  "{@background} tag": {
+    "scope": "json,yaml",
+    "prefix": "@background",
+    "body": ["{@background ${1:body}}$0"]
+  },
+  "{@bold} tag": {
+    "scope": "json,yaml",
+    "prefix": "@bold",
+    "body": ["{@bold ${1:body}}$0"]
+  },
+  "{@book} tag": {
+    "scope": "json,yaml",
+    "prefix": "@book",
+    "body": ["{@book ${1:body}}$0"]
+  },
+  "{@boon} tag": {
+    "scope": "json,yaml",
+    "prefix": "@boon",
+    "body": ["{@boon ${1:body}}$0"]
+  },
+  "{@chance} tag": {
+    "scope": "json,yaml",
+    "prefix": "@chance",
+    "body": ["{@chance ${1:body}}$0"]
+  },
+  "{@class} tag": {
+    "scope": "json,yaml",
+    "prefix": "@class",
+    "body": ["{@class ${1:body}}$0"]
+  },
+  "{@classFeature} tag": {
+    "scope": "json,yaml",
+    "prefix": "@classFeature",
+    "body": ["{@classFeature ${1:body}}$0"]
+  },
+  "{@color} tag": {
+    "scope": "json,yaml",
+    "prefix": "@color",
+    "body": ["{@color ${1:body}}$0"]
+  },
+  "{@condition} tag": {
+    "scope": "json,yaml",
+    "prefix": "@condition",
+    "body": ["{@condition ${1:body}}$0"]
+  },
+  "{@creature} tag": {
+    "scope": "json,yaml",
+    "prefix": "@creature",
+    "body": ["{@creature ${1:body}}$0"]
+  },
+  "{@cult} tag": {
+    "scope": "json,yaml",
+    "prefix": "@cult",
+    "body": ["{@cult ${1:body}}$0"]
+  },
+  "{@d20} tag": {
+    "scope": "json,yaml",
+    "prefix": "@d20",
+    "body": ["{@d20 ${1:body}}$0"]
+  },
+  "{@damage} tag": {
+    "scope": "json,yaml",
+    "prefix": "@damage",
+    "body": ["{@damage ${1:body}}$0"]
+  },
+  "{@dc} tag": {
+    "scope": "json,yaml",
+    "prefix": "@dc",
+    "body": ["{@dc ${1:body}}$0"]
+  },
+  "{@deity} tag": {
+    "scope": "json,yaml",
+    "prefix": "@deity",
+    "body": ["{@deity ${1:body}}$0"]
+  },
+  "{@dice} tag": {
+    "scope": "json,yaml",
+    "prefix": "@dice",
+    "body": ["{@dice ${1:body}}$0"]
+  },
+  "{@disease} tag": {
+    "scope": "json,yaml",
+    "prefix": "@disease",
+    "body": ["{@disease ${1:body}}$0"]
+  },
+  "{@feat} tag": {
+    "scope": "json,yaml",
+    "prefix": "@feat",
+    "body": ["{@feat ${1:body}}$0"]
+  },
+  "{@filter} tag": {
+    "scope": "json,yaml",
+    "prefix": "@filter",
+    "body": ["{@filter ${1:body}}$0"]
+  },
+  "{@footnote} tag": {
+    "scope": "json,yaml",
+    "prefix": "@footnote",
+    "body": ["{@footnote ${1:body}}$0"]
+  },
+  "{@hazard} tag": {
+    "scope": "json,yaml",
+    "prefix": "@hazard",
+    "body": ["{@hazard ${1:body}}$0"]
+  },
+  "{@h} tag": {
+    "scope": "json,yaml",
+    "prefix": "@h",
+    "body": ["{@h ${1:body}}$0"]
+  },
+  "{@hit} tag": {
+    "scope": "json,yaml",
+    "prefix": "@hit",
+    "body": ["{@hit ${1:body}}$0"]
+  },
+  "{@homebrew} tag": {
+    "scope": "json,yaml",
+    "prefix": "@homebrew",
+    "body": ["{@homebrew ${1:body}}$0"]
+  },
+  "{@i} tag": {
+    "scope": "json,yaml",
+    "prefix": "@i",
+    "body": ["{@i ${1:body}}$0"]
+  },
+  "{@italic} tag": {
+    "scope": "json,yaml",
+    "prefix": "@italic",
+    "body": ["{@italic ${1:body}}$0"]
+  },
+  "{@item} tag": {
+    "scope": "json,yaml",
+    "prefix": "@item",
+    "body": ["{@item ${1:body}}$0"]
+  },
+  "{@language} tag": {
+    "scope": "json,yaml",
+    "prefix": "@language",
+    "body": ["{@language ${1:body}}$0"]
+  },
+  "{@link} tag": {
+    "scope": "json,yaml",
+    "prefix": "@link",
+    "body": ["{@link ${1:body}}$0"]
+  },
+  "{@loader} tag": {
+    "scope": "json,yaml",
+    "prefix": "@loader",
+    "body": ["{@loader ${1:body}}$0"]
+  },
+  "{@note} tag": {
+    "scope": "json,yaml",
+    "prefix": "@note",
+    "body": ["{@note ${1:body}}$0"]
+  },
+  "{@object} tag": {
+    "scope": "json,yaml",
+    "prefix": "@object",
+    "body": ["{@object ${1:body}}$0"]
+  },
+  "{@optfeature} tag": {
+    "scope": "json,yaml",
+    "prefix": "@optfeature",
+    "body": ["{@optfeature ${1:body}}$0"]
+  },
+  "{@psionic} tag": {
+    "scope": "json,yaml",
+    "prefix": "@psionic",
+    "body": ["{@psionic ${1:body}}$0"]
+  },
+  "{@race} tag": {
+    "scope": "json,yaml",
+    "prefix": "@race",
+    "body": ["{@race ${1:body}}$0"]
+  },
+  "{@recharge} tag": {
+    "scope": "json,yaml",
+    "prefix": "@recharge",
+    "body": ["{@recharge ${1:body}}$0"]
+  },
+  "{@reward} tag": {
+    "scope": "json,yaml",
+    "prefix": "@reward",
+    "body": ["{@reward ${1:body}}$0"]
+  },
+  "{@s} tag": {
+    "scope": "json,yaml",
+    "prefix": "@s",
+    "body": ["{@s ${1:body}}$0"]
+  },
+  "{@scaledice} tag": {
+    "scope": "json,yaml",
+    "prefix": "@scaledice",
+    "body": ["{@scaledice ${1:body}}$0"]
+  },
+  "{@sense} tag": {
+    "scope": "json,yaml",
+    "prefix": "@sense",
+    "body": ["{@sense ${1:body}}$0"]
+  },
+  "{@skill} tag": {
+    "scope": "json,yaml",
+    "prefix": "@skill",
+    "body": ["{@skill ${1:body}}$0"]
+  },
+  "{@spell} tag": {
+    "scope": "json,yaml",
+    "prefix": "@spell",
+    "body": ["{@spell ${1:body}}$0"]
+  },
+  "{@strike} tag": {
+    "scope": "json,yaml",
+    "prefix": "@strike",
+    "body": ["{@strike ${1:body}}$0"]
+  },
+  "{@subclassFeat} tag": {
+    "scope": "json,yaml",
+    "prefix": "@subclassFeat",
+    "body": ["{@subclassFeat ${1:body}}$0"]
+  },
+  "{@table} tag": {
+    "scope": "json,yaml",
+    "prefix": "@table",
+    "body": ["{@table ${1:body}}$0"]
+  },
+  "{@trap} tag": {
+    "scope": "json,yaml",
+    "prefix": "@trap",
+    "body": ["{@trap ${1:body}}$0"]
+  },
+  "{@variantrule} tag": {
+    "scope": "json,yaml",
+    "prefix": "@variantrule",
+    "body": ["{@variantrule ${1:body}}$0"]
+  },
+  "{@vehicle} tag": {
+    "scope": "json,yaml",
+    "prefix": "@vehicle",
+    "body": ["{@vehicle ${1:body}}$0"]
+  },
+  "{@scaledamage} tag": {
+    "scope": "json,yaml",
+    "prefix": "@scaledamage",
+    "body": ["{@scaledamage ${1:body}}$0"]
+  },
+  "{@u} tag": {
+    "scope": "json,yaml",
+    "prefix": "@u",
+    "body": ["{@u ${1:body}}$0"]
+  },
+  "{@underline} tag": {
+    "scope": "json,yaml",
+    "prefix": "@underline",
+    "body": ["{@underline ${1:body}}$0"]
+  },
+  "{@highlight} tag": {
+    "scope": "json,yaml",
+    "prefix": "@highlight",
+    "body": ["{@highlight ${1:body}}$0"]
+  },
+  "{@comic} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comic",
+    "body": ["{@comic ${1:body}}$0"]
+  },
+  "{@comicH1} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comicH1",
+    "body": ["{@comicH1 ${1:body}}$0"]
+  },
+  "{@comicH2} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comicH2",
+    "body": ["{@comicH2 ${1:body}}$0"]
+  },
+  "{@comicH3} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comicH3",
+    "body": ["{@comicH3 ${1:body}}$0"]
+  },
+  "{@comicH4} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comicH4",
+    "body": ["{@comicH4 ${1:body}}$0"]
+  },
+  "{@comicNote} tag": {
+    "scope": "json,yaml",
+    "prefix": "@comicNote",
+    "body": ["{@comicNote ${1:body}}$0"]
+  },
+  "{@subclassFeature} tag": {
+    "scope": "json,yaml",
+    "prefix": "@subclassFeature",
+    "body": ["{@subclassFeature ${1:body}}$0"]
+  },
+  "{@recipe} tag": {
+    "scope": "json,yaml",
+    "prefix": "@recipe",
+    "body": ["{@recipe ${1:body}}$0"]
+  }
+}

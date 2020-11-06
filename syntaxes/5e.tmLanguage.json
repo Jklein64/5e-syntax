@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "5e",
+  "scopeName": "source.5e",
+  "injectionSelector": "L:string.quoted.double",
+  "patterns": [{
+    "include": "#asterisks"
+  }, {
+    "include": "#tag"
+  }],
+  "repository": {
+    "body": {
+      "contentName": "value.variable.5e",
+      "begin": "\\s",
+      "end": "(?=\\})|(?=\\\")",
+      "patterns": [{
+        "include": "#empty"
+      }, {
+        "include": "#tag"
+      }, {
+        "comment": "Separator between things",
+        "name": "punctuation.separator.5e",
+        "match": "\\|"
+      }, {
+        "comment": "Matches standard sources.  Stripped from items page of website.",
+        "name": "constant.language.5e",
+        "match": "\\b(PhB|DMG|Screen|MM|SCAG|VGM|XGE|EEPC|EET|MTF|UAWGE|MoT|AL|ALCurseOfStrahd|ALElementalEvil|ALRageOfDemons|AI|LMoP|HoDQ|RoT|RoTOS|PotA|OotA|CoS|SKT|TftYP-AtG|TftYP-DiT|TftYP-TFoF|TftYP-THSoT|TftYP-TSC|TftYP-ToH|TftYP-WPM|ToA|WDH|WDMM|KKW|LLK|GoS|HftT|DIP|OoW|GGR|PSA|PSD|PSI|PSX|PSK|PSZ|TTP|OGA|Mag|UA|UAArtificer|UAEladrinAndGith|UAEberron|UAFeatsForRaces|UAFeatsForSkills|UAFiendishOptions|UAFeats|UAGothicHeroes|UAModernMagic|UAStarterSpells|UATheMysticClass|UAThatOldBlackMagic|UATheRangerRevised|UAWaterborneAdventures|UAVariantRules|UALightDarkUnderdark|UARangerAndRogue|UAATrioOfSubclasses|UABarbarianPrimalPaths|UARevisedSubclasses|UAKitsOfOld|UABardBardColleges|UAClericDivineDomains|UADruid|UARevisedClassOptions|UAFighter|UAMonk|UAPaladin|UAModifyingClasses|UASorcerer|UAWarlockAndWizard|UATheFaithful|UAWizardRevisited|UAElfSubraces|UAMassCombat|UAThreePillarExperience|UAGreyhawkInitiative|UAThreeSubclasses|UAOrderDomain|UACentaursMinotaurs|UAGiantSoulSorcerer|UARacesOfEberron|UARacesOfRavnica|UAOfShipsAndSea|UASidekicks|UAArtificerRevisited|Stream|Titter|TCE|PHB|IDRotF|EGW|UA2SMT|TftYP|ERLW|WGE|BGDIA|HotDQ|IMR|RMBRE|MOT|DC|HoS|ESK|SLW|SDW|DD)\\b"
+      }, {
+        "comment": "Last entry, for aliases.  More of a catch-all case.",
+        "name": "string.5e",
+        "match": "(?<=\\|)[^|}]+(?=\\})"
+      }, {
+        "comment": "Make all but first (and last) yellow.",
+        "name": "value.variable.rest.5e",
+        "match": "(?<=\\|)[^|}]+(?=\\|)"
+      }]
+    },
+
+    "tag": {
+      "name": "meta.structure.tag.5e",
+      "begin": "\\{(?=@)",
+      "end": "\\}|(?=\\\")",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.brace.open.5e"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.brace.close.5e"
+        }
+      },
+      "patterns": [{
+        "include": "#body"
+      }, {
+        "name": "keyword.language.5e",
+        "match": "@(5etools|action|adventure|area|atk|b|background|bold|book|boon|chance|class|classFeature|color|condition|creature|cult|d20|damage|dc|deity|dice|disease|feat|filter|footnote|hazard|h|hit|homebrew|i|italic|item|language|link|loader|note|object|optfeature|psionic|race|recharge|recipe|reward|s|scaledice|sense|skill|spell|strike|subclassFeat|table|tags|trap|variantrule|vehicle|scaledamage|u|underline|highlight|comic|comicH1|comicH2|comicH3|comicH4|comicNote|tag|subclassFeature)\\b",
+        "captures": {
+          "1": {
+            "name": "keyword.language.symbol.5e"
+          },
+          "2": {
+            "name": "keyword.language.name.5e"
+          }
+        }
+      }, {
+        "name": "string.5e",
+        "match": "(\\b|@)([\\w\\d]+)\\b"
+      }]
+    },
+
+    "asterisks": {
+      "name": "keyword.asterisk.5e",
+      "match": "(?<=\\})([*]+)"
+    },
+
+    "empty": {
+      "begin": "\\{(?!=@)",
+      "end": "\\}|(?=\\\")",
+      "patterns": [{
+        "include": "#tag"
+      }, {
+        "include": "#empty"
+      }]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "5e-syntax",
+  "displayName": "5e Tools TextMate Grammar",
+  "description": "TextMate Grammar that highlights tags 5e Tools' special JSON data storage type.",
+  "icon": "images/5e-tools-logo.png",
+  "repository": {
+    "url": "https://github.com/Jklein64/5e-syntax.git"
+  },
+  "publisher": "Tree",
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "5e.tools",
+    "5etools",
+    "Syntax",
+    "Grammar"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "5e",
+      "aliases": ["5e"],
+      "configuration": "./language-configuration.json",
+      "extensions": [".5e"]
+    }],
+    "grammars": [{
+      "scopeName": "source.5e",
+      "path": "./syntaxes/5e.tmLanguage.json",
+      "injectTo": ["source.json", "source.yaml"]
+    }, {
+      "scopeName": "source.5e",
+      "path": "./syntaxes/5e.tmLanguage.json",
+      "language": "5e"
+    }],
+    "snippets": [{
+      "language": "json",
+      "path": "./snippets/snippets.json"
+    }]
+  }
+}
