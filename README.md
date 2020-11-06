@@ -16,7 +16,7 @@ Example of YAML highlighting (only works inside double quotes):
 
 Since this extension uses TextMate grammar for syntax highlighting, the colors are controlled by your theme. I built it with the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme in mind. If you want to use these colors with a different theme (or override them), add the following to your `settings.json` (either User or Workspace):
 
-```json
+```jsonc
 {
 	// ... other parts here
 	"editor.tokenColorCustomizations": {
