@@ -8,7 +8,7 @@
   },
   "publisher": "Tree",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -23,24 +23,38 @@
     "Grammar"
   ],
   "contributes": {
-    "languages": [{
-      "id": "5e",
-      "aliases": ["5e"],
-      "configuration": "./language-configuration.json",
-      "extensions": [".5e"]
-    }],
-    "grammars": [{
-      "scopeName": "source.5e",
-      "path": "./syntaxes/5e.tmLanguage.json",
-      "injectTo": ["source.json", "source.yaml"]
-    }, {
-      "scopeName": "source.5e",
-      "path": "./syntaxes/5e.tmLanguage.json",
-      "language": "5e"
-    }],
-    "snippets": [{
-      "language": "json",
-      "path": "./snippets/snippets.json"
-    }]
+    "languages": [
+      {
+        "id": "5e",
+        "aliases": [
+          "5e"
+        ],
+        "configuration": "./language-configuration.json",
+        "extensions": [
+          ".5e"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "source.5e",
+        "path": "./syntaxes/5e.tmLanguage.json",
+        "injectTo": [
+          "source.json",
+          "source.yaml"
+        ]
+      },
+      {
+        "scopeName": "source.5e",
+        "path": "./syntaxes/5e.tmLanguage.json",
+        "language": "5e"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "json",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   }
 }
